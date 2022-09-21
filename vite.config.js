@@ -18,7 +18,7 @@ export default defineConfig({
             targets: [
               {
                 src: normalizePath(path.resolve(__dirname, 'vendor', 'tinymce', 'tinymce')),
-                dest: normalizePath(path.resolve(__dirname, 'public', 'build', 'assets'))
+                dest: normalizePath(path.resolve(__dirname, 'public'))
               },
             ]
           }),
