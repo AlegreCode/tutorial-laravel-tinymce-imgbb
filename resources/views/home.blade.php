@@ -12,6 +12,7 @@
     <main class="w-[960px] m-auto">
         <h1 class="text-3xl text-center text-stone-300 py-4">Integración Laravel, TinyMCE e ImgBB</h1>
         <form action="" method="post">
+            @csrf
             <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar" class="bg-sky-900 hover:bg-sky-500 hover:cursor-pointer p-2 mt-2 text-stone-300 rounded block ml-auto">
         </form>
