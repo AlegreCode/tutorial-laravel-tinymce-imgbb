@@ -16,7 +16,7 @@
             <textarea name="body" id="textarea" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar" class="bg-sky-900 hover:bg-sky-500 hover:cursor-pointer p-2 mt-2 text-stone-300 rounded block ml-auto">
         </form>
-        <section class="bg-slate-800 mt-2 rounded">
+        <section class="bg-slate-800 mt-2 p-2 rounded">
             @for ($i = 0; $i < 3; $i++)
                 <x-post/>
             @endfor
