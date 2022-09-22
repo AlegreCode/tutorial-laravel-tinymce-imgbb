@@ -10,7 +10,8 @@ class PostController extends Controller
 {
     public function show()
     {
-        return view('home');
+        $posts = Post::all();
+        return view('home', ['posts' => $posts]);
     }
 
     public function uploadImage(Request $request)
