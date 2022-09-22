@@ -31,7 +31,7 @@
                         data: formData,
                     })
                     .then((r) => {
-                        resolve(r.location);
+                        resolve(r.data.location);
                     })
                     .catch((e) => {
                         reject(`Error: ${e.message}`);

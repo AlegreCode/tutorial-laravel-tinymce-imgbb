@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'show'])->name('home');
+
+Route::post('/image-upload', [PostController::class, 'uploadImage'])->name('image-upload');
