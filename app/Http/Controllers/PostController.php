@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Infotech\ImgBB\ImgBB;
 
@@ -18,5 +19,14 @@ class PostController extends Controller
         return response()->json([
             'location' => $data['data']['url'],
         ]);
+    }
+
+    public function save(Request $request)
+    {
+        $post = new Post();
+        $post->body = $request->body;
+        $post->save();
+
+        return redirect()->route('home');
     }
 }
