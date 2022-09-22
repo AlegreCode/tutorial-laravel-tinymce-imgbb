@@ -21,7 +21,22 @@
             tinymce.init({
                 selector: 'textarea#textarea', // Replace this CSS selector to match the placeholder element for TinyMCE
                 plugins: 'code table lists image',
-                toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | image'
+                toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | image',
+                images_upload_handler: (blobInfo) => new Promise((resolve, reject) => {
+                    const formData = new FormData();
+                    formData.append('file', blobInfo.blob(), blobInfo.filename());
+                    axios({
+                        method: 'POST',
+                        url: '/image-upload',
+                        data: formData,
+                    })
+                    .then((r) => {
+                        resolve(r.location);
+                    })
+                    .catch((e) => {
+                        reject(`Error: ${e.message}`);
+                    });
+                })
             });
         }, false);
     </script>
