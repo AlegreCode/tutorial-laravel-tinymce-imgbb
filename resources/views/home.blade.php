@@ -9,6 +9,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    <main class="bg-slate-900">
+        <h1>Integración Laravel, TinyMCE e ImgBB</h1>
+    </main>
     <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
