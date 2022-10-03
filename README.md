@@ -1,5 +1,5 @@
 
-<center># Integración Laravel - TinyMCE - ImgBB # </center>
+<center><h1> Integración Laravel - TinyMCE - ImgBB </h1> </center>
 
 Tutorial sobre como integrar un proyecto Laravel con TinyMCE y API ImgBB.
 
