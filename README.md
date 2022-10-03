@@ -1,5 +1,5 @@
 
-# <p styel="text-align: center;">Integración Laravel - TinyMCE - ImgBB</p>
+<center># Integración Laravel - TinyMCE - ImgBB # </center>
 
 Tutorial sobre como integrar un proyecto Laravel con TinyMCE y API ImgBB.
 
